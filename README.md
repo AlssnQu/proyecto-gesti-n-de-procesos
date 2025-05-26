@@ -1,1 +1,1 @@
-# proyecto-gesti-n-de-procesos
+# proyecto-gestion-de-procesos
