@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "array": "cpp",
+        "charconv": "cpp",
+        "concepts": "cpp",
+        "string": "cpp",
+        "exception": "cpp",
+        "optional": "cpp",
+        "string_view": "cpp",
+        "format": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "ostream": "cpp",
+        "span": "cpp",
+        "streambuf": "cpp",
+        "variant": "cpp"
+    }
+}
