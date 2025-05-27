@@ -16,5 +16,6 @@
         "span": "cpp",
         "streambuf": "cpp",
         "variant": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
