@@ -5,13 +5,10 @@
       "includePath": [
         "${workspaceFolder}/**",
         "${workspaceFolder}/src/planificador_cpu",
-        "${workspaceFolder}/src/gestor_procesos",
-        "C:/mingw64/include",
-        "C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include",
-        "C:/mingw64/x86_64-w64-mingw32/include",
+        "${workspaceFolder}/src/gestor_procesos"
       ],
       "defines": [],
-      "compilerPath": "C:/mingw64/bin/g++.exe",
+      "compilerPath": "g++.exe", 
       "cStandard": "c17",
       "cppStandard": "c++17",
       "intelliSenseMode": "windows-gcc-x64"
