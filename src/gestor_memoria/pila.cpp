@@ -38,7 +38,7 @@ public:
         BloqueMemoria* temp = cima;
         cout << "Estado de la Memoria (de cima a base):\n";
         while (temp != nullptr) {
-            cout << "Proceso ID: " << temp->idProceso << ", Tamaño: " << temp->tamano << endl;
+            cout << "Proceso ID: " << temp->idProceso << ", Tamaño: " << temp->tamano << "\n";
             temp = temp->siguiente;
         }
     }
