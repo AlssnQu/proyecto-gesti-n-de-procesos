@@ -16,16 +16,16 @@ public:
         cima = nullptr;
     }
 
-    // Asignar memoria (agregar al tope) sin usar push estándar
+    // Asignar memoria (agregar al tope) sin usar push 
     void asignarMemoria(int idProceso, int tamano) {
         BloqueMemoria* nuevo = new BloqueMemoria{idProceso, tamano, cima};
         cima = nuevo;
     }
 
-    // Liberar memoria (quitar del tope) sin usar pop estándar
+    // Liberar memoria (quitar del tope) sin usar pop 
     void liberarMemoria() {
         if (cima == nullptr) {
-            cout << "No hay memoria asignada para liberar.\n";
+            cout << "No hay memoria establecida para liberar.\n";
             return;
         }
         BloqueMemoria* eliminado = cima;
