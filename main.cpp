@@ -74,6 +74,7 @@ void menuPlanificadorCPU() {
 
 void menuGestorMemoria() {
     int opcion;
+    PilaMemoria pila; 
     do {
         cout << "\n--- Gestor de Memoria ---\n";
         cout << "1. Reservar memoria\n";
@@ -85,13 +86,13 @@ void menuGestorMemoria() {
 
         switch (opcion) {
             case 1:
-                // reservarMemoria();
+                PilaMemoria.reservarMemoria();
                 break;
             case 2:
-                // liberarMemoria();
+                liberarMemoria();
                 break;
             case 3:
-                // mostrarMemoria();
+                mostrarMemoria();
                 break;
             case 0:
                 break;
