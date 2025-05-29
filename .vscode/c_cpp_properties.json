@@ -1,18 +1,22 @@
 {
   "configurations": [
     {
-      "name": "Win32",
+      "name": "windows-gcc-x64",
       "includePath": [
-        "${workspaceFolder}/**",
-        "${workspaceFolder}/src/planificador_cpu",
-        "${workspaceFolder}/src/gestor_procesos"
+        "${workspaceFolder}/**"
       ],
-      "defines": [],
-      "compilerPath": "g++.exe", 
-      "cStandard": "c17",
-      "cppStandard": "c++17",
-      "intelliSenseMode": "windows-gcc-x64"
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+      "intelliSenseMode": "windows-gcc-x64",
+      "cppStandard": "${default}",
+      "cStandard": "${default}"
     }
   ],
   "version": 4
+}
+
 }
