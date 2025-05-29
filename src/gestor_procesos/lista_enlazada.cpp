@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-using namespace std; 
+using namespace std;
 
 struct Proceso {
     int id;
@@ -86,5 +86,4 @@ public:
             temp = temp->siguiente;
         }
     }
-
 };
