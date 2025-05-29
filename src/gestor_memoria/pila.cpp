@@ -1,3 +1,4 @@
+//Codigo del Gestor de memoria 0.2
 #include <iostream>
 using namespace std;
 
