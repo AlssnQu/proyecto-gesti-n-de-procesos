@@ -1,3 +1,4 @@
+//Codigo del Gestor de memoria 0.2
 #include <iostream>
 using namespace std;
 
@@ -16,16 +17,16 @@ public:
         cima = nullptr;
     }
 
-    // Asignar memoria (agregar al tope) sin usar push estándar
+    // Asignar memoria (agregar al tope) sin usar push 
     void asignarMemoria(int idProceso, int tamano) {
         BloqueMemoria* nuevo = new BloqueMemoria{idProceso, tamano, cima};
         cima = nuevo;
     }
 
-    // Liberar memoria (quitar del tope) sin usar pop estándar
+    // Liberar memoria (quitar del tope) sin usar pop 
     void liberarMemoria() {
         if (cima == nullptr) {
-            cout << "No hay memoria asignada para liberar.\n";
+            cout << "No hay memoria establecida para liberar.\n";
             return;
         }
         BloqueMemoria* eliminado = cima;
@@ -38,7 +39,7 @@ public:
         BloqueMemoria* temp = cima;
         cout << "Estado de la Memoria (de cima a base):\n";
         while (temp != nullptr) {
-            cout << "Proceso ID: " << temp->idProceso << ", Tamaño: " << temp->tamano << endl;
+            cout << "Proceso ID: " << temp->idProceso << ", Tamaño: " << temp->tamano << "\n";
             temp = temp->siguiente;
         }
     }
