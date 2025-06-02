@@ -6,6 +6,7 @@ struct Proceso {
     int id;
     string nombre;
     int prioridad;
+    string estado;
     Proceso* siguiente;
 };
 
@@ -18,21 +19,22 @@ public:
         cabeza = nullptr;
     }
 
-    void insertarProceso(int id, string nombre, int prioridad) {
-        Proceso* nuevo = new Proceso{id, nombre, prioridad, nullptr};
-        if (cabeza == nullptr) {
-            cabeza = nuevo;
-        } else {
-            Proceso* temp = cabeza;
-            while (temp->siguiente != nullptr) {
-                temp = temp->siguiente;
-            }
-            temp->siguiente = nuevo;
+    void insertarProceso(int id, string nombre, int prioridad, string estado = "Nuevo") {
+    Proceso* nuevo = new Proceso{id, nombre, prioridad, estado, nullptr};
+    if (cabeza == nullptr) {
+        cabeza = nuevo;
+    } else {
+        Proceso* temp = cabeza;
+        while (temp->siguiente != nullptr) {
+            temp = temp->siguiente;
+        }
+        temp->siguiente = nuevo;
         }
     }
 
     void eliminarProceso(int id) {
-        if (cabeza == nullptr) return;
+        if (cabeza == nullptr) 
+            return;
         if (cabeza->id == id) {
             Proceso* eliminado = cabeza;
             cabeza = cabeza->siguiente;
@@ -77,12 +79,23 @@ public:
         }
     }
 
+    void cambiarEstado(int id, string nuevoEstado) {
+        Proceso* proceso = buscarPorId(id);
+        if (proceso != nullptr) {
+            proceso->estado = nuevoEstado;
+        } else {
+            cout << "Proceso no encontrado" << endl;
+        }
+    }
+
+
     void mostrarProcesos() {
         Proceso* temp = cabeza;
         while (temp != nullptr) {
             cout << "ID: " << temp->id
-                 << ", Nombre: " << temp->nombre
-                 << ", Prioridad: " << temp->prioridad << endl;
+                << ", Nombre: " << temp->nombre
+                << ", Prioridad: " << temp->prioridad
+                << ", Estado: " << temp->estado << endl;
             temp = temp->siguiente;
         }
     }
