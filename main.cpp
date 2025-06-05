@@ -1,5 +1,4 @@
 #include <iostream>
-// Incluye tus headers necesarios aquí, como:
 #include "lista_enlazada.cpp"
 #include "cola_prioridad.cpp"
 #include "pila.cpp"
@@ -11,7 +10,7 @@ void mostrarMenuPrincipal() {
     cout << "1. Gestor de Procesos\n";
     cout << "2. Planificador de CPU\n";
     cout << "3. Gestor de Memoria\n";
-    cout << "0. Salir\n";
+    cout << "4. Salir\n";
     cout << "Seleccione una opción: ";
 }
 
